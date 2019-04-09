@@ -4,7 +4,7 @@ $(document).ready(function () {
     //change option  
     var form = $("#form").html();
     $('select').on('change', function () {
-      var  option = $('select').val();
+        var option = $('select').val();
         $("#form").html("");
         for (var i = 0; i < option; i++) {
             $("#form").append(form);
@@ -23,8 +23,8 @@ $(document).ready(function () {
         var its = $("form #it");
 
         if (validate(names, sClass, emails, phones, physics, maths, its)) {
-            
-            addData( names, sClass, emails, phones, physics, maths, its);
+
+            addData(names, sClass, emails, phones, physics, maths, its);
             $(":input").val("");
         }
 
@@ -123,16 +123,16 @@ $(document).ready(function () {
     function checkString(valueOfElement) {
         var falseCount = 0;
         var val = valueOfElement.value;
-            if (val.length === 0) {
-                $(valueOfElement).next().filter($(".error")).show();
-                falseCount++;
+        if (val.length === 0) {
+            $(valueOfElement).next().filter($(".error")).show();
+            falseCount++;
 
-            } else {
-                $(valueOfElement).next().filter($(".error")).hide();
+        } else {
+            $(valueOfElement).next().filter($(".error")).hide();
         }
         return falseCount;
     }
-    
+
     // function for checking up regex
     function checkWithRegex(valueOfElement, regex) {
         var falseCount = 0;
@@ -160,9 +160,9 @@ $(document).ready(function () {
         } else {
 
             $(valueOfElement).next().filter($(".error")).hide();
-        } 
+        }
         return falseCount;
-  }
+    }
 
     // add data to table and reset data in form
     function addData(names, sClass, emails, phones, physics, maths, its) {
@@ -170,7 +170,7 @@ $(document).ready(function () {
         $("#table-area").show();
         var sNumber = Number($("#table .no:last").text());
         sNumber = sNumber >= 1 ? sNumber + 1 : 1;
-        option =$('select').val();
+        option = $('select').val();
         for (var j = 0; j < option; j++) {
             $('#table table').append('<tr><td class="no">' + Number(j + sNumber) +
                 '</td><td>' + names[j].value + '</td><td>' + sClass[j].value +
