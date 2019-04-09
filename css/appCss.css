@@ -2,14 +2,8 @@
     text-transform: capitalize;
 }
 
-#lop {
+#class {
     text-transform: uppercase;
-}
-
-label {
-    display: block;
-    width: 120px;
-    margin-left: 10px;
 }
 
 .error {
@@ -29,13 +23,9 @@ form {
     padding: 0 5px;
 }
 
-#nhap,
-input {
-    margin: 10px;
-}
 
 .btn1,
-.btn2 {
+.btn1 {
     float: right;
     margin: 0 5px;
 }

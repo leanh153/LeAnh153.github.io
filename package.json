@@ -1,0 +1,14 @@
+{
+  "name": "LeAnh153.github.io",
+  "version": "1.0.0",
+  "description": "Leanh web",
+  "main": "index.html",
+  "repository": "git@github.com:leanh153/Leanh153.github.io.git",
+  "author": "leanh153 <anhle1531994@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "3.2.1",
+    "jslint": "^0.12.1"
+  }
+}
