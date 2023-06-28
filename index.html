@@ -1,129 +1,147 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>trang chu Lê Anh</title>
-    <meta charset="utf-8">
-    <meta name="msvalidate.01" content="53D031279162D57A9DA93511C27A8DC4" />
-    <meta name="description" content="trang chủ anhle1531994.000webhostapp.com giúp bạn tìm kiếm một nơi để ở, home stay, du lịch thế giới, du lịch cùng anhle1531994.000webhostapp.com thoải mái yên tâm, những nơi nên đi lu lịch. trang chủ" />
-    <meta name="viewport" content="width=device-width initial-scale=1.0" />
-    <link href="css/mainCss.css" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- CSS Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- JavaScript và các plugin tùy chọn -->
+    <style>
+        body {
+            background-image: url('img/pexels-francesco-ungaro-673648.jpg'), url('img/pexels-lukas-628241.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            max-width: 720px;
+            margin: auto;
 
 
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111941623-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
         }
-        gtag('js', new Date());
 
-        gtag('config', 'UA-111941623-1');
-    </script>
+        .pulse-on-hover:hover {
+            animation-name: pulse;
+            animation-duration: 1s;
+        }
 
 
+        section {
+            background-color: #74EBD5;
+            background-image: linear-gradient(90deg, #74EBD5 30%, #9FACE6 100%);
+            border-radius: 2%;
+            opacity: 90%;
+        }
 
-    <!-- Hotjar Tracking Code for https://anhle1531994.000webhostapp.com/ -->
-    <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {
-                hjid: 736821,
-                hjsv: 6
-            };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
+        header {
+            /* background-image: linear-gradient(90deg, #c7cef1 30%, #11162d 100%); */
+            background-image: url('img/pexels-daniel-absi-952670.jpg');
+            height: 250px;
+            background-repeat: repeat;
+            border-radius: 2%;
+            background-size: contain;
+            opacity: 90%;
+            padding-top: 0px;
+        }
+        
+        .profile-pic {
+            height: 90px;
+            width: 90px ;
+        }
+
+    </style>
+
+    <title>Personal Landing Page</title>
 </head>
 
-<body>
-    <div class="container-fluid">
-        <nav class="navbar-fixed-top">
+<body> 
+
+
+    <header class="jumbotron">
+        <div class="container text-center text-white">
+            <h1>Welcome to My Landing Page</h1>
+            <p>This is a personal landing page created using Bootstrap 4 and HTML.</p>
+            <img class="card-img-top profile-pic" src="profilePic/1.png" alt="Card image cap">
+        </div>
+        
+
+    </header>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Liên hệ</h2>
+            <div class="row ">
+                <div class="col-md-4 col-sm-6 col-6">
+                    <div class="card pulse-on-hover">
+                        <div class="card-body ">
+                            <a href="https://leanh153.github.io" class="link-info">
+                                <img src="icon/z.png" class="card-img-top rounded" alt="">
+                                <h6 class="card-title">Liên hệ zalo</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-6">
+                    <div class="card pulse-on-hover">
+                        <div class="card-body ">
+                            <a href="https://leanh153.github.io" class="link-info">
+                                <img src="icon/z.png" class="card-img-top rounded" alt="">
+                                <h6 class="card-title">Liên hệ zalo</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-6">
+                    <div class="card pulse-on-hover">
+                        <div class="card-body ">
+                            <a href="https://leanh153.github.io" class="link-info">
+                                <img src="icon/z.png" class="card-img-top rounded" alt="">
+                                <h6 class="card-title">Liên hệ zalo</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+    </section>
+
+    <section id="about" class="section pulse-on-hover ">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nulla vitae lorem tristique
+                consectetur
+                sit amet non arcu.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section  pulse-on-hover  bg-light">
+        <div class="container">
+            <h2>Skills</h2>
             <ul>
-                <li><a href="index.html">Brand</a></li>
-                <li><a href="#">Browse</a></li>
-                <li class="liright"><a href="#">Help</a></li>
-                <li class="liright"><a href="login.html">Log In</a></li>
-                <li class="liright"><a href="#">Sign Up</a></li>
-                <li class="liright"><a href="javaScriptApp.html">JavascriptApp</a></li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
             </ul>
-        </nav>
-        <header>
-            <h1>Find a place to stay.</h1>
-            <p>Rent from people in over 34,000 cities and 192 countries.</p>
-        </header>
-        <hr />
-        <section>
-            <div class="sheader">
-                <h2>Neighborhood Guides</h2>
-                <p>Not sure where to stay? We've created neighborhood guides for cities all around the world.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-sm-12">
-                    <div class="col-sm-6 col-md-6"><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/mexico-city.png" alt="du lịch mexico-city"></div>
-                    <div class="col-sm-6 col-md-6"><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/ny.png" alt="du lịch new york"></div>
-                    <div class="col-sm-6 col-md-6"><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/tokyo.png" alt="du lịch tokyo"></div>
-                    <div class="col-sm-6 col-md-6"><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/paris.png" alt="du lịch paris"></div>
-                </div>
+        </div>
+    </section>
 
-                <div class="col-md-4 col-sm-12">
-                    <div class="col-md-12 col-sm-6"><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/invite.png" alt="invite"></div>
-                </div>
 
-            </div>
-        </section>
-        <footer class="row">
-            <div class="col-md-8">
-                <div class="col-sm-12 col-md-6">
-                    <h3>Travel</h3>
-                    <P>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries.</P>
-                    <div><a href="#">See how to travel on Airbnb</a></div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <h3>Host</h3>
 
-                    <p>Renting out your unused space could pay your bills or fund your next vacation.</p>
-                    <div><a href="#">Learn more about hosting</a></div>
-                </div>
-            </div>
+    <footer class="bg-dark text-white text-center py-4 pulse-on-hover  rounded">
+        <p>&copy; 2023 My Landing Page. All rights reserved.</p>
+    </footer>
 
-            <div class="col-md-4">
-                <div class="col-sm-12">
-                    <h3>Trust and Safety</h3>
-                    <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
-                    <div><a href="#">Learn about trust at Airbnb</a></div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Bootstrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type='text/javascript'>
-        window._sbzq || function(e) {
-            e._sbzq = [];
-            var t = e._sbzq;
-            t.push(["_setAccount", 74963]);
-            var n = e.location.protocol == "https:" ? "https:" : "http:";
-            var r = document.createElement("script");
-            r.type = "text/javascript";
-            r.async = true;
-            r.src = n + "//static.subiz.com/public/js/loader.js";
-            var i = document.getElementsByTagName("script")[0];
-            i.parentNode.insertBefore(r, i)
-        }(window);
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js.map"></script>
+    <script src="js/taxi_script.js"></script>
+
 </body>
 
 </html>
