@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- CSS Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- JavaScript và các plugin tùy chọn -->
+    <style>
+        body {
+            background-image: url('img/pexels-francesco-ungaro-673648.jpg'), url('img/pexels-lukas-628241.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            max-width: 720px;
+            margin: auto;
+
+
+        }
+
+        .pulse-on-hover:hover {
+            animation-name: pulse;
+            animation-duration: 1s;
+        }
+
+
+        section {
+            background-color: #74EBD5;
+            background-image: linear-gradient(90deg, #74EBD5 30%, #9FACE6 100%);
+            border-radius: 2%;
+            opacity: 90%;
+        }
+
+        header {
+            /* background-image: linear-gradient(90deg, #c7cef1 30%, #11162d 100%); */
+            background-image: url('img/pexels-daniel-absi-952670.jpg');
+            height: 250px;
+            background-repeat: repeat;
+            border-radius: 2%;
+            background-size: contain;
+            opacity: 90%;
+            padding-top: 0px;
+        }
+        
+        .profile-pic {
+            height: 90px;
+            width: 90px ;
+        }
+
+    </style>
+
+    <title>Personal Landing Page</title>
+</head>
+
+<body> 
+
+
+    <header class="jumbotron">
+        <div class="container text-center text-white">
+            <h1>Welcome to My Landing Page</h1>
+            <p>This is a personal landing page created using Bootstrap 4 and HTML.</p>
+            <img class="card-img-top profile-pic" src="profilePic/1.png" alt="Card image cap">
+        </div>
+        
+
+    </header>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Liên hệ</h2>
+            <div class="row ">
+                <div class="col-md-4 col-sm-6 col-6">
+                    <div class="card pulse-on-hover">
+                        <div class="card-body ">
+                            <a href="https://leanh153.github.io" class="link-info">
+                                <img src="icon/z.png" class="card-img-top rounded" alt="">
+                                <h6 class="card-title">Liên hệ zalo</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-6">
+                    <div class="card pulse-on-hover">
+                        <div class="card-body ">
+                            <a href="https://leanh153.github.io" class="link-info">
+                                <img src="icon/z.png" class="card-img-top rounded" alt="">
+                                <h6 class="card-title">Liên hệ zalo</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-6">
+                    <div class="card pulse-on-hover">
+                        <div class="card-body ">
+                            <a href="https://leanh153.github.io" class="link-info">
+                                <img src="icon/z.png" class="card-img-top rounded" alt="">
+                                <h6 class="card-title">Liên hệ zalo</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+    </section>
+
+    <section id="about" class="section pulse-on-hover ">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nulla vitae lorem tristique
+                consectetur
+                sit amet non arcu.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section  pulse-on-hover  bg-light">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-dark text-white text-center py-4 pulse-on-hover  rounded">
+        <p>&copy; 2023 My Landing Page. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js.map"></script>
+    <script src="js/taxi_script.js"></script>
+
+</body>
+
+</html>

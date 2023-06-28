@@ -12,6 +12,10 @@ header, section, footer, nav {
 	display: block;
 }
 
+body {
+	background-image: url("pexels-francesco-ungaro-673648.jpg");
+  }
+
 .row::after {
     content: "";
     clear: both;
@@ -23,6 +27,11 @@ header, section, footer, nav {
     padding: 15px;
 }
 
+.container-fluid {
+	max-width: 768px;
+	
+	/* min-width: 320px; */
+}
 
 @media only screen and (max-width: 767px) {
 	/* For mobile phones */
@@ -55,6 +64,8 @@ header {
 	top: 40px;
 }
 }
+
+
     
 
                   /* nav */
