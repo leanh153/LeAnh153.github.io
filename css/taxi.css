@@ -6,7 +6,7 @@ body {
     margin: auto;
     margin-top: 0px;
     padding-top: 0px;
-
+    /* font-family: Times; */
 }
 
 .pulse-on-hover:hover {
@@ -43,32 +43,33 @@ header {
     bottom: 20px;
     right: 20px;
     z-index: 999;
-    /* width: 300px; */
-    background-color: #f1f1f1;
+    background-color: rgb(247, 5, 5);
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
   }
   
   #payment-button {
-    background-image: url('../img/icon/payment_icon.png');
-    width: 50px;
-    height: 50px;
+    /* background-image: url('../img/icon/payment_icon.png'); */
+    width: 60px;
+    height: 60px;
     padding: 10px;
     /* background-color: #337ab7; */
     color: #fff;
+    background-color: rgb(67, 167, 248);
     cursor: pointer;
     display:flexbox;
     background-repeat: no-repeat;
     background-size: cover;
     float: right;
+    border-radius: 50%;
     /* background-attachment: fixed; */
   }
   
   #payment-content {
     padding: 10px;
-    height: 200px;
-    width: 200px;
+    height: 230px;
+    width: 230px;
     overflow-y: scroll;
   }
   
