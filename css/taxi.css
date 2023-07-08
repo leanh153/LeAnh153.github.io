@@ -1,37 +1,80 @@
 body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: linear-gradient(180deg, rgb(45,47,60) 30%, rgb(10,7,26) 100%);
     max-width: 720px;
-    margin: auto;
-    margin-top: 0px;
-    padding-top: 0px;
+    margin: 0 auto;
+    /* padding-top: 50px; */
     /* font-family: Times; */
 }
+
+.navbar {
+   width: 720px;
+   margin: 0px auto;
+    /* width: 720px; */
+} 
 
 .pulse-on-hover:hover {
     animation-name: pulse;
     animation-duration: 1s;
+    border: 1px solid aliceblue;
+    
+}
+
+.card-col {
+    background-color: transparent;
+    padding: 0 !important;
+    margin: 0;
+
 }
 
 
+.card {
+    background: rgba(193, 176, 228, 0.2);
+}
+
+.card-body {
+    padding: 5px;
+}
+
+#feedback {
+  overflow: hidden;
+}
+
 section {
-    background-color: #74EBD5;
-    background-image: linear-gradient(90deg, #74EBD5 30%, #9FACE6 100%);
+    background-image: linear-gradient(90deg, rgb(45,47,60) 50%, rgb(10,7,26) 100%);
     border-radius: 4px;
     opacity: 90%;
+    margin-top: 10px;
 }
 
 header {
-    height: 250px;
+    padding-top: 80px !important;
+    height: 350px;
     background-repeat:repeat;
     border-radius: 2%;
     background-size: contain;
     opacity: 90%;
     padding-top: 0px;
+    max-width: 720px;
+    margin: auto;
 }
 
 
+.nav-item:hover {
+    border: 1px solid snow;
+    border-radius: 4px; 
+}
+.nav-link:hover {
+  color: white;
+}
+.active {
+    border: 1px solid snow;
+    background-color: rgb(57, 105, 57,0.8);
+    border-radius: 4px;
+}
+
+.text-high-light {
+    color: linear-gradient(180deg, rgb(45,47,60) 30%, rgb(10,7,26) 100%);
+}
 
 .profile-pic {
     height: 90px;
@@ -40,36 +83,63 @@ header {
 
 #payment-box {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 165px;
+    left: 0px;
     z-index: 999;
-    background-color: rgb(247, 5, 5);
+    background-color: rgba(107, 117, 178, 0.5);
     border-radius: 5px;
     overflow: hidden;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
   }
   
-  #payment-button {
-    /* background-image: url('../img/icon/payment_icon.png'); */
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    /* background-color: #337ab7; */
-    color: #fff;
-    background-color: rgb(67, 167, 248);
-    cursor: pointer;
-    display:flexbox;
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: right;
-    border-radius: 50%;
-    /* background-attachment: fixed; */
+  .payment-button {
+    bottom: 165px;
+    left: 0px;
+    position: fixed;;
+    z-index: 999;
+
   }
-  
+
+  .call-button {
+    bottom: 90px;
+    left: 0px;
+    position: fixed;
+    z-index: 999;
+  }
+ 
+  #social-buttons {
+    bottom: -5px;
+    position:sticky;
+    width: 300px;
+    margin: auto;
+  }
+
+.icon-img {
+  width: 35px;
+  height: 35px;
+  margin:0 0 15px 10px;
+}
+.social-bg {
+  border-radius: 10%;
+  margin: 0 2px;
+  width: 55px;
+  height: 55px;
+  background-color: rgb(133, 168, 199);
+}
+
   #payment-content {
-    padding: 10px;
-    height: 230px;
-    width: 230px;
+    padding: 0;
+    height: 270px;
+    width: 200px;
     overflow-y: scroll;
   }
+
+  ul{
+    list-style-type: none;
+  }
+
+  footer {
+    padding-bottom: 100px;
+  }
+
+
   
