@@ -14,10 +14,31 @@ body {
 }
 
 .navbar {
+  top:0px;
    max-width: 720px;
    margin: 0px auto;
-    /* width: 720px; */
+   position: sticky;
+   z-index: 999;
 } 
+
+@media only screen and (max-width: 576px) {
+
+  nav.navbar{
+    background: transparent !important;
+    position: fixed;
+    z-index: 999;
+  }
+
+.nav-item{
+  background-color: rgb(62, 78, 92) ;
+  padding: 5px;
+}
+
+  .navbar-toggler{
+    background: rgb(133, 168, 199) !important;
+    color: aliceblue !important;
+  }
+}
 
 .pulse-on-hover:hover {
     animation-name: pulse;
@@ -73,10 +94,11 @@ header {
 .nav-link:hover {
   color: white;
 }
-.active {
+.active{
     border: 1px solid snow;
-    background-color: rgb(57, 105, 57,0.8);
+    background-color: rgba(47, 173, 47, 0.8);
     border-radius: 4px;
+    color: aliceblue;
 }
 
 .text-high-light {
