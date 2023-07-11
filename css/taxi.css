@@ -9,8 +9,6 @@ body {
     background-image: linear-gradient(180deg, rgb(45,47,60) 30%, rgb(10,7,26) 100%);
     max-width: 720px;
     margin: 0 auto;
-    /* padding-top: 50px; */
-    /* font-family: Times; */
 }
 
 .navbar {
@@ -21,28 +19,9 @@ body {
    z-index: 999;
 } 
 
-@media only screen and (max-width: 576px) {
-
-  nav.navbar{
-    background: transparent !important;
-    position: fixed;
-    z-index: 999;
-  }
-
-.nav-item{
-  background-color: rgb(62, 78, 92) ;
-  padding: 5px;
-}
-
-  .navbar-toggler{
-    background: rgb(133, 168, 199) !important;
-    color: aliceblue !important;
-  }
-}
-
 .pulse-on-hover:hover {
     animation-name: pulse;
-    animation-duration: 1s;
+    animation-duration: 2s;
     border: 1px solid aliceblue;
     
 }
@@ -63,8 +42,10 @@ body {
     padding: 5px;
 }
 
-#feedback {
-  overflow: hidden;
+iframe {
+  max-width:700px;
+   height:500px;
+    overflow: scroll;
 }
 
 section {
@@ -86,11 +67,11 @@ header {
     margin: auto;
 }
 
-
 .nav-item:hover {
     border: 1px solid snow;
     border-radius: 4px; 
 }
+
 .nav-link:hover {
   color: white;
 }
@@ -115,52 +96,89 @@ header {
     bottom: 165px;
     left: 0px;
     z-index: 999;
-    background-color: rgba(107, 117, 178, 0.5);
+    background-color: rgba(107, 117, 178);
     border-radius: 5px;
     overflow: hidden;
+    color: white;
   }
   
-  .payment-button {
-    bottom: 165px;
-    left: 0px;
-    position: fixed;;
-    z-index: 999;
-
-  }
-
-  .call-button {
-    bottom: 90px;
-    left: 0px;
-    position: fixed;
-    z-index: 999;
-  }
- 
-  #social-buttons {
-    bottom: -5px;
-    position:sticky;
-    width: 300px;
-    margin: auto;
-  }
-
-.icon-img {
-  width: 35px;
-  height: 35px;
-  margin:0 0 15px 10px;
-}
-.social-bg {
-  border-radius: 10%;
-  margin: 0 2px;
-  width: 55px;
-  height: 55px;
-  background-color: rgb(133, 168, 199);
-}
-
   #payment-content {
     padding: 0;
     height: 270px;
     width: 200px;
     overflow-y: scroll;
   }
+
+.payment-button {
+  display: flex;
+  padding: 10px 8px 8px 8px;
+  text-decoration: none;
+text-align: center;
+  font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(133, 168, 199);
+    bottom: 150px;
+    left: 10px;
+    position: fixed;;
+    z-index: 999;
+
+  }
+
+.button-call-now{
+  display: flex;
+  box-shadow: 0 0 5px #ddd;
+  text-decoration: none;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  padding: 5px 0px 5px 5px;
+  position: fixed;
+  bottom: 90px;
+  left: 10px;
+  z-index: 999;
+  background: red;
+  border-radius: 25px 25px;
+}
+
+.fa-phone {
+  background: rgba(19, 222, 36);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 7px;
+  margin-right: 7px;
+}
+
+.button-call-now span{
+  font-size: 16px;
+  color: yellow;
+  font-weight: bold;
+}
+
+#social-buttons {
+  display: flex;
+    bottom: 0px;
+    position:sticky;
+    max-width: 270px;
+    margin: auto;
+  }
+
+  .social-button {
+    display: flex;
+    border-radius: 10%;
+    padding: 8px;
+    margin: 0 2px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(133, 168, 199);
+  } 
+
+
+
+  
 
   ul{
     list-style-type: none;
@@ -171,4 +189,65 @@ header {
   }
 
 
+  @media only screen and (max-width: 576px) {
+
+    nav.navbar{
+      background: transparent !important;
+      position: fixed;
+      z-index: 999;
+    }
   
+  .nav-item{
+    background-color: rgb(62, 78, 92) ;
+    padding: 5px;
+  }
+  
+    .navbar-toggler{
+      background: rgb(133, 168, 199) !important;
+      color: aliceblue !important;
+    }
+  
+    .button-call-now{
+      box-shadow: 0 0 5px #ddd;
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+      position: fixed;
+      bottom: 90px;
+      left: 0px;
+      z-index: 999;
+      background: red;
+      border-radius: 25px 25px;
+    }
+    
+    .fa-phone {
+      background: rgba(19, 222, 36);
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      padding: 7px;
+    }
+    
+    .button-call-now span{
+     display: none;
+    }
+
+    .payment-button {
+      display: flex;
+      padding: 10px 8px 8px 8px;
+      text-decoration: none;
+    text-align: center;
+      font-size: 30px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgb(133, 168, 199);
+        bottom: 150px;
+        left: 0px;
+        position: fixed;;
+        z-index: 999;
+      }
+  }

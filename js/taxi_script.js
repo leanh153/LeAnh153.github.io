@@ -78,18 +78,17 @@ for (let i = 0; i < data.payment.length; i++) {
 };
 // Thêm thành phần nút mạng xã hội trong html
 for (let i = 0; i < data.social.length; i++) {
-    $('#social-buttons').append('<span class=" fa-stack social-bg fa-2x" >'
-    +'<a class=" stretched-link" target="_blank" href="'+data.social[i].link +'"></a>'
-    +'<img class="icon-img" src="'+data.social[i].icon+'" alt="" srcset=""></span>'
-    )
-};
+    $('#social-buttons').append('<a class="pulse-on-hover social-button" target="_blank" '
+    +'href="'+data.social[i].link +'"> <img class="icon-img" src="'+ data.social[i].icon
+    +'" alt="" srcset=""></a>'
+    )};
 // Payment
-$('#payment-content').toggle();
+$('#payment-box').toggle();
 $('#payment-box').on('click', function () {
-    $('#payment-content').toggle();
+    $('#payment-box').toggle();
 });
 $('.payment-button').on('click', function () {
-    $('#payment-content').toggle();
+    $('#payment-box').toggle();
 });
 
 // Navibar custom
