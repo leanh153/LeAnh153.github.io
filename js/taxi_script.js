@@ -1,6 +1,5 @@
 // page data
-const data = {
-
+const data = { 
     img: {
         profile_pic: "img/profilePic/1.png",
         header_bg: "img/background/pexels-daniel-absi-952670.jpg",
@@ -45,15 +44,15 @@ const data = {
         },
         {
             text: "Đăng ký Youtube",
-            link: "",
+            link: "https://youtube.com/@leanhtaxi",
             icon: "img/icon/y.png",
             style: "color: rgb(234,51,35);",
 
         },
         
         {
-            text: "Đăng ký Youtube",
-            link: "",
+            text: "Đăng ký Facebook",
+            link: "https://facebook.com/leanhtaxi153",
             icon: "img/icon/f.png",
             style: "color: rgb(234,51,35);",
 
@@ -96,3 +95,4 @@ $('.nav-link').on('click', function(){
     $('.nav-link').removeClass('active');
     $(this).addClass('active');
 })
+
