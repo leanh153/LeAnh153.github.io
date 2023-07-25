@@ -22,19 +22,7 @@ const data = {
        
     ],
     social: [
-        {
-            text: "Liên hệ Zalo",
-            link: "https://zalo.me/leanh153",
-            icon: "img/icon/z.png",
-            style: "color: rgb(50,114,224);",
-        },
-        {
-            text: "Liên hệ Messenger",
-            link: "https://www.messenger.com/t/100003818532953/",
-            icon: "img/icon/m.png",
-            style: "color: rgb(50,114,224);",
-
-        },
+       
         {
             text: "Follow trên Tiktok",
             link: "https://www.tiktok.com/@leanh1503",
@@ -55,6 +43,19 @@ const data = {
             link: "https://facebook.com/leanhtaxi153",
             icon: "img/icon/f.png",
             style: "color: rgb(234,51,35);",
+
+        },
+        {
+            text: "Liên hệ Zalo",
+            link: "https://zalo.me/leanh153",
+            icon: "img/icon/z.png",
+            style: "color: rgb(50,114,224);",
+        },
+        {
+            text: "Liên hệ Messenger",
+            link: "https://www.messenger.com/t/100003818532953/",
+            icon: "img/icon/m.png",
+            style: "color: rgb(50,114,224);",
 
         },
     
@@ -88,6 +89,7 @@ $('#payment-box').on('click', function () {
 });
 $('.payment-button').on('click', function () {
     $('#payment-box').toggle();
+    window.setTimeout(togglePayment,10000);
 });
 
 // Navibar custom
@@ -96,3 +98,6 @@ $('.nav-link').on('click', function(){
     $(this).addClass('active');
 })
 
+function togglePayment (){
+    $('#payment-box').toggle();
+}

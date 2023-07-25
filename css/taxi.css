@@ -33,6 +33,9 @@ body {
   color: white;
 }
 
+.text-high-light{
+  color: linear-gradient( rgb(228, 233, 136), rgb(114, 119, 72));
+}
 
 .pulse-on-hover:hover {
   animation-name: pulse;
@@ -60,6 +63,10 @@ body {
   padding: 5px;
 }
 
+#about p {
+  font-size: 13px;
+}
+
 iframe {
   max-width: 700px;
   height: 500px;
@@ -74,7 +81,7 @@ section {
 }
 
 header {
-  padding-top: 80px !important;
+  padding-top: 50px !important;
   height: 350px;
   background-repeat: repeat;
   border-radius: 2%;
@@ -87,7 +94,13 @@ header {
 
 
 .text-high-light {
-  color: linear-gradient(180deg, rgb(45, 47, 60) 30%, rgb(10, 7, 26) 100%);
+  background: linear-gradient(235deg, #b4903a, #fce19d,#b4903a);
+  -webkit-background-clip: text;
+  color: transparent; 
+}
+
+.text-unhigh-light{
+  font-size: 20px;
 }
 
 .profile-pic {
@@ -97,8 +110,8 @@ header {
 
 #payment-box {
   position: fixed;
-  bottom: 90px;
-  right: 0px;
+  bottom: 150px;
+  left: 70px;
   z-index: 999;
   background-color: rgba(107, 117, 178);
   border-radius: 5px;
@@ -123,8 +136,10 @@ header {
   height: 50px;
   border-radius: 50%;
   background: rgb(133, 168, 199);
-  bottom: 90px;
-  right: 0px;
+  color: rgb(0, 255, 34);
+  bottom: 0px;
+  left: 0px;
+  opacity: 0%;
   position: fixed;
   z-index: 999;
 
@@ -163,18 +178,17 @@ header {
 }
 
 #social-buttons {
-  display: flex;
-  bottom: 0px;
-  position: sticky;
-  max-width: 270px;
-  margin: auto;
+  display: block;
+  position: fixed;
+  left: 10px;
+  bottom: 150px;
 }
 
 .social-button {
   display: flex;
   border-radius: 10%;
   padding: 8px;
-  margin: 0 2px;
+  margin: 2px;
   width: 50px;
   height: 50px;
   background-color: rgb(133, 168, 199);
@@ -197,6 +211,8 @@ footer {
 
   nav.navbar {
     background: transparent !important;
+    position: fixed;
+    z-index: 999;
   }
 nav ul {
   max-width:max-content;
@@ -210,6 +226,7 @@ nav ul {
     background: rgb(133, 168, 199) !important;
     color: aliceblue !important;
   }
+  
 
   .button-call-now {
     box-shadow: 0 0 5px #ddd;
@@ -225,6 +242,24 @@ nav ul {
     z-index: 999;
     background: red;
     border-radius: 25px 25px;
+  }
+
+  #social-buttons {
+    display: flex;
+    bottom: 0px;
+    position: sticky;
+    max-width: 270px;
+    margin: auto;
+  }
+  
+  .social-button {
+    display: flex;
+    border-radius: 10%;
+    padding: 8px;
+    margin: 0 2px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(133, 168, 199);
   }
 
   .fa-phone {
@@ -243,6 +278,24 @@ nav ul {
     display: none;
   }
 
+  #payment-box {
+    position: fixed;
+    bottom: 150px;
+    left: 0px;
+    z-index: 999;
+    background-color: rgba(107, 117, 178);
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+  }
+  
+  #payment-content {
+    padding: 0;
+    height: 270px;
+    width: 200px;
+    overflow-y: scroll;
+  }
+  
   .payment-button {
     display: flex;
     padding: 10px 8px 8px 8px;
@@ -253,9 +306,12 @@ nav ul {
     height: 50px;
     border-radius: 50%;
     background: rgb(133, 168, 199);
-    bottom: 90px;
-  right: 0px;
+    color: rgb(0, 255, 34);
+    bottom: 150px;
+    left: 0px;
     position: fixed;
     z-index: 999;
+  
   }
+  
 }
